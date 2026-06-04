@@ -1,0 +1,32 @@
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Editor
+.vscode/
+.idea/
+*.iml
+
+# Private content — never commit
+papers/
+drafts/
+*-resume*.docx
+*resume*.pdf
+genetic_passport*
+g25_coordinates*
+*.dna
+*-private.md
+*_private/
+
+# Build artifacts
+__pycache__/
+*.pyc
+node_modules/
+
+# Local working copies of memory and wiki content
+# The schema/examples are committed; real entries stay private.
+memory/private/
+wiki/private/
+wiki/INDEX_*.md
