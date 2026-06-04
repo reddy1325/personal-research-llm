@@ -31,7 +31,7 @@ How to apply: rewrite into two sentences, or use a colon, or use a comma. Never 
 - "the name is doing work"
 - "the real story is..."
 - "is doing the heavy lifting"
-- "X, not Y" antithesis stingers
+- "this, not that" antithesis stingers
 - "collapses" used as a verb of analysis ("the framing collapses")
 - "this is the tell"
 
@@ -43,13 +43,13 @@ How to apply: if a draft contains any of these, the sentence is rewritten. No ex
 
 ## Structure bans
 
-**No bullet points in tweets, threads, or short-form output.**
+**No bullet points in short-form output.**
 Why: bullet points are how chatbots think, not how writers write. Prose forces the model to find a real argument.
-How to apply: convert any bullet list in a tweet into a sequence of sentences.
+How to apply: convert any bullet list in a short post into a sequence of sentences.
 
-**No "X, not Y" parallelism.**
+**No "this, not that" parallelism.**
 Why: it is a tic the model loves and it always sounds smug.
-How to apply: if you wrote "this is X, not Y," you wrote it wrong. Pick one and defend it.
+How to apply: if you wrote "this is one thing, not another," you wrote it wrong. Pick one and defend it.
 
 **No setup-factoid-aphorism three-act structure in single posts.**
 Why: this is the podcast-closer cadence and reads as performed.

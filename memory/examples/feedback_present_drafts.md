@@ -5,10 +5,10 @@ metadata:
   type: feedback
 ---
 
-Before posting any batch of content to any external surface, save the full draft text to a durable file and present it in chat for explicit approval.
+Before publishing any batch of content to any external surface, save the full draft text to a durable file and present it in chat for explicit approval.
 
 **Why:** A batch shipped directly once contained a fact error the human would have caught on review. The cost of an approval round is much lower than the cost of a retraction.
 
 **How to apply:** Every batch run, write the batch to a versioned file in the working folder, then surface the file plus a chat summary. Wait for explicit approval before any irreversible action.
 
-Related: [[feedback-verify-before-draft]], [[feedback-post-verification]]
+Related: [[feedback-verify-before-draft]], [[feedback-after-ship-verification]]

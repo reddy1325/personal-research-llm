@@ -47,7 +47,7 @@ What stays the same:
 
 Failures produce spec entries. Spec entries prevent recurrence. The system gets quieter over time, not louder.
 
-A real example: when an early run shipped two replies to the same post, the fix was not "remind the assistant to check." The fix was a memory rule: never reply twice to the same post, with a `Why:` and a `How to apply:`. The rule has been in place ever since. The failure has not recurred.
+A real example: when an early run shipped two responses to the same parent item, the fix was not "remind the assistant to check." The fix was a memory rule: never respond twice to the same item, with a `Why:` and a `How to apply:`. The rule has been in place ever since. The failure has not recurred.
 
 This is the difference between a chatbot that does what you say and a system that does what you have already taught it.
 

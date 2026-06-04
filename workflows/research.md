@@ -41,20 +41,31 @@ The assistant reads the entire source, not just the abstract. For PDFs, this mea
 
 For books, ingestion is chapter by chapter, one wiki entry per chapter, with a master entry linking them.
 
+For long or complex documents (papers over 30 pages, technical specs, requirements documents, dense academic monographs), reading happens in three passes:
+
+**Pass 1: skeleton.** Extract the table of contents, abstract or executive summary, all section headings, every figure and table caption. Produce an outline of the argument before reading any body text. This pass is fast and tells you where to focus.
+
+**Pass 2: targeted deep read.** Read the sections that carry the argument. Quote verbatim from each section to confirm the body content is in context. Skim sections that are background or boilerplate.
+
+**Pass 3: detail capture.** Walk through methodology, sample size, controls, edge cases. This is the pass that catches what a careless reader misses.
+
+Why three passes: a single-pass read on a long document burns context and produces shallow notes. Three passes produce an outline, then a structured argument, then defensible detail. Each pass writes to the wiki entry in progress.
+
 Why: skim-summaries miss the load-bearing details. The wiki only stays useful if entries reflect what the source actually says.
 
 ## 3. Wiki entry drafted
 
-Following the schema in `wiki/schema.md`:
+Every entry is built in three layers so the source can be consumed at whatever depth the next task requires:
 
-- Frontmatter (authors, year, topics, source-tier)
-- Citation
-- One-line takeaway
-- Key claims with locators
-- Method
-- Where this fits (supports / contests / extends links)
-- Caveats and reliability
-- Quotes worth keeping
+**Layer A: one-line takeaway.** The single most important claim, in one sentence. This is what feeds article-series hooks, deck cover slides, and inline citations.
+
+**Layer B: key claims.** Five to ten bullet-sized claims with locators (page, section, figure). This is what feeds report bodies and synthesis pages.
+
+**Layer C: full notes.** Methodology, sample size, controls, caveats, quotes worth keeping. This is what verification draws on when a downstream draft is challenged.
+
+The three layers map to the wiki schema in `wiki/schema.md`. Drafts pull from the layer they need; they do not re-read the source.
+
+Before writing the entry, check whether the source has already been ingested. Duplicate entries fragment the knowledge graph. `grep -l "<author> <year>" wiki/*.md` is the cheap check.
 
 The entry is the contract with future-you about what this source said. Treat it accordingly.
 
@@ -70,7 +81,7 @@ The relevant `INDEX_<topic>.md` gets a new one-line pointer with the one-line ta
 
 ## 6. Memory updated (if needed)
 
-If the new source changes a standing fact pack, the memory entry gets updated with a pointer to the new source. If the source extends a contested-author register (great on X, weak on Y), that goes in memory too.
+If the new source changes a standing fact pack, the memory entry gets updated with a pointer to the new source. If the source extends a contested-author register (reliable on one topic, weak on another), that goes in memory too.
 
 Most ingestions do not require a memory update. The wiki is the right home for source-level detail.
 
@@ -80,10 +91,10 @@ The original PDF stays in a private `papers/` folder. It does not go in the publ
 
 ## Cross-referencing as a one-grep operation
 
-The point of the schema is that "every paper on topic X" becomes:
+The point of the schema is that "every paper on a given topic" becomes:
 
 ```
-grep -l "topics:.*topic-X" wiki/*.md
+grep -l "topics:.*genetics" wiki/*.md
 ```
 
 "Every author who is contested on a specific claim" becomes a frontmatter filter. "Every paper that supports a given claim" becomes a backlink search. The wiki turns reading into a query-able substrate.

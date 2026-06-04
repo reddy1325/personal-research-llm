@@ -27,12 +27,12 @@ A draft that fails the check is rewritten, not patched. Patching produces Franke
 
 The same voice has different registers per surface:
 
-- **Threads.** Composed. Full citations or diacritics where they belong. One stat per post. Each post stands alone.
-- **Replies.** Phone-casual. Translit where threads use diacritics. Sharper kickers allowed.
+- **Long-form articles or article series.** Composed. Full citations where they belong. One stat per beat. Each beat stands alone.
+- **Short responses.** Casual. Sharper kickers allowed. Compressed to the essential point.
 - **Reports.** Prose, not bullets. Calibrated language. Source-faithful by default.
 - **Decks.** Spare. One idea per slide. The voice still shows up, just compressed.
 
-Register switching is in the voice rules check. A reply written in thread register reads stiff; a thread written in reply register reads sloppy.
+Register switching is in the voice rules check. A short response written in long-form register reads stiff; a long-form article written in short-response register reads sloppy.
 
 ## Source-faithful default
 

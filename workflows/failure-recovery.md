@@ -20,25 +20,25 @@ This is the difference between a chatbot and a system. A chatbot forgets. A syst
 
 These are sanitized versions of real recoveries.
 
-### Duplicate reply to the same post
+### Duplicate response to the same parent item
 
-**Incident.** Two replies were drafted and shipped to the same parent post in the same session.
+**Incident.** Two responses were drafted and shipped to the same parent item in the same session.
 
-**Diagnosis.** The assistant treated each batch as independent and did not check whether a prior reply existed.
+**Diagnosis.** The assistant treated each batch as independent and did not check whether a prior response existed.
 
-**Encoded fix.** A standing memory rule: never reply more than once to the same post in the same conversation arc. Before drafting a reply, check whether a prior reply exists.
+**Encoded fix.** A standing memory rule: never respond more than once to the same item in the same conversation arc. Before drafting a response, check whether a prior response exists.
 
 **Status.** Not recurred since the rule was added.
 
-### Composer-clear treated as "posted"
+### Composer-clear treated as "shipped"
 
-**Incident.** A platform silently dropped a post. The composer cleared, suggesting success. The post never appeared.
+**Incident.** A publishing surface silently dropped an item. The composer cleared, suggesting success. The item never appeared.
 
-**Diagnosis.** The assistant equated "composer cleared" with "shipped." The platform's actual state was not checked.
+**Diagnosis.** The assistant equated "composer cleared" with "shipped." The surface's actual state was not checked.
 
 **Encoded fix.** Post-ship verification step: after any batch, check the actual published artifact, not the composer state.
 
-**Status.** Encoded as a standing rule in the posting playbook.
+**Status.** Encoded as a standing rule in the publishing playbook.
 
 ### Fact-error caught on review
 
@@ -50,13 +50,13 @@ These are sanitized versions of real recoveries.
 
 **Status.** The rule applies to every draft now.
 
-### Voice drift on a long thread
+### Voice drift across a long article
 
-**Incident.** A multi-post thread started in the right voice and drifted into AI-slop cadence by the closing posts.
+**Incident.** A multi-section article started in the right voice and drifted into AI-slop cadence by the closing sections.
 
-**Diagnosis.** The voice rules check was run on the opening post but not on later posts in the same batch.
+**Diagnosis.** The voice rules check was run on the opening section but not on later sections in the same batch.
 
-**Encoded fix.** The voice rules check runs on every post in a batch, not just the first. A drift in the closer is treated as a check failure.
+**Encoded fix.** The voice rules check runs on every section in a batch, not just the first. A drift in the closer is treated as a check failure.
 
 **Status.** Encoded in the voice workflow.
 

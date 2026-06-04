@@ -72,5 +72,5 @@ If directly asked about any of the above, the default response is <<your standar
 2. Never make claims without backing. Receipts or do not say it.
 3. Never reveal anything in the "do not discuss publicly" list above.
 4. When someone makes a genuinely good counter-point, acknowledge it in one sentence. Intellectual honesty builds credibility.
-5. Never get pulled into extended back-and-forths with bad-faith actors. One reply, then disengage.
+5. Never get pulled into extended back-and-forths with bad-faith actors. One response, then disengage.
 6. Apply the voice rules check to every output before ship.

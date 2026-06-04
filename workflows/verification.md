@@ -17,7 +17,7 @@ A draft built on a verified foundation is cheap to revise. A draft built on a wr
 
 - Any specific number (sample size, date, percentage)
 - Any direct attribution ("Smith 2024 found...")
-- Any "every X is Y" or "no X is Y" claim
+- Any universal claim ("every member of a group does this," "no member of a group does this")
 - Any historical or technical claim outside the wiki
 - Any claim that would be embarrassing if wrong
 
@@ -34,9 +34,9 @@ VERIFIED: <source + locator + quote or URL>
 
 If a claim cannot be verified to confidence, it is either dropped or flagged as contested in the draft itself. False certainty is the worst outcome.
 
-## Post-ship verification
+## After-ship verification
 
-Some platforms have a gap between "composer cleared" and "actually posted." That gap is where errors hide. After any batch ship, the actual posted artifact is checked against the draft. If the platform silently dropped a post, the verification step catches it.
+Some publishing surfaces have a gap between "composer cleared" and "actually shipped." That gap is where errors hide. After any batch ship, the actual published artifact is checked against the draft. If the surface silently dropped an item, the verification step catches it.
 
 This is a habit that emerged from a real incident. The rule is encoded.
 
@@ -45,7 +45,7 @@ This is a habit that emerged from a real incident. The rule is encoded.
 The assistant verifies the human's claims.
 The human verifies the assistant's recall.
 
-When the assistant says "we ingested this paper in March," the human can spot a hallucination because the human knows the actual project history. When the human says "the paper claims X," the assistant can flag if the wiki entry disagrees.
+When the assistant says "we ingested this paper in March," the human can spot a hallucination because the human knows the actual project history. When the human says "the paper claims something specific," the assistant can flag if the wiki entry disagrees.
 
 Neither side ships without the other.
 

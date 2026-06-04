@@ -16,19 +16,19 @@ Example: "User is a product manager focused on AI-native tooling. Frame technica
 
 Standing rules about how to work with me. Both corrections (what to stop doing) and validations (what to keep doing). Always include the `Why:` so edge cases can be judged, not pattern-matched.
 
-Example: "Show full draft text for approval before posting any batch. Why: a batch posted directly once contained a fact error the human would have caught. How to apply: every batch run, drafts go to a durable file plus the chat for review."
+Example: "Show full draft text for approval before publishing any batch. Why: a batch shipped directly once contained a fact error the human would have caught. How to apply: every batch run, drafts go to a durable file plus the chat for review."
 
 ### project
 
 What is in flight. Who is doing what, by when, why. These change fast; the schema requires absolute dates so memories stay interpretable after time passes.
 
-Example: "Madhyamaka thread series in progress. Order: causation (done) → motion → self → epistemology → language. Author stance: source-faithful exposition, defense reserved for final post in the series. As of 2026-05-25."
+Example: "Long-form article series in progress on a single topic. Order: part 1 (done) → part 2 → part 3 → part 4 → part 5. Author stance: source-faithful exposition, defense reserved for the final part. As of 2026-05-25."
 
 ### reference
 
 Pointers to external systems. Where to look for things that live outside this repo.
 
-Example: "X posting playbook: detection of reply-restrictions, virtualization workaround, min_faves filter syntax. Lives at `reference_x_posting_playbook.md` in private memory."
+Example: "Publishing playbook for the social surface I use most: response-restriction detection, virtualized timeline workaround, search filter syntax. Lives at `reference_publishing_playbook.md` in private memory."
 
 ## File format
 
@@ -54,10 +54,10 @@ Cross-link related memories with [[their-name-slug]].
 
 ```markdown
 ## Working style — hard rules
-- [Present drafts before posting](feedback_present_drafts.md) — Show full draft for approval
+- [Present drafts before shipping](feedback_present_drafts.md) — Show full draft for approval
 
 ## Voice bans
-- [No em dashes](feedback_no_em_dashes.md) — All AI tells; never in tweets
+- [No em dashes](feedback_no_em_dashes.md) — All AI tells; never in short-form output
 
 ## User profile
 - [Product manager focus](user_role.md) — AI-native PM, frame explanations as such

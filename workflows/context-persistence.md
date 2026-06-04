@@ -16,7 +16,7 @@ Three persistence mechanisms, layered:
 
 `MEMORY.md` loads automatically at the start of every conversation. It contains one-line pointers to every standing rule, project, user fact, and reference. The assistant walks in already briefed.
 
-A new chat about a thread series, three weeks after the last session, starts with the assistant knowing:
+A new chat about an article series, three weeks after the last session, starts with the assistant knowing:
 
 - The series order and which parts have shipped
 - The author stance for this series
@@ -40,7 +40,7 @@ Each layer uses plain Markdown. The persistence works because:
 - Files survive across machines. Just copy the folder.
 - Files survive across tools. If I switch models tomorrow, the files still work.
 - Files are diffable. I can see exactly what changed between sessions.
-- Files are greppable. "What did we decide about X" is one search away.
+- Files are greppable. "What did we decide about a given topic" is one search away.
 
 A SaaS notes app dies in 18 months. The filesystem does not.
 

@@ -52,4 +52,4 @@ For real entries: this section is where author reliability gets flagged. If a so
 
 ## Notes on this example
 
-A real wiki has dozens to hundreds of entries shaped like this. The discipline pays off when a synthesis task arrives: pulling "every paper on topic X" becomes a grep operation rather than a memory exercise. Pulling "every paper where author Y is reliable" becomes a frontmatter filter. The wiki turns reading into infrastructure.
+A real wiki has dozens to hundreds of entries shaped like this. The discipline pays off when a synthesis task arrives: pulling "every paper on a given topic" becomes a grep operation rather than a memory exercise. Pulling "every paper where a given author is reliable" becomes a frontmatter filter. The wiki turns reading into infrastructure.

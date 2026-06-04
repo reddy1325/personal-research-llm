@@ -1,6 +1,6 @@
 # workflows/multi-surface-output.md
 
-One ingestion. Many outputs. How the same source material feeds threads, reports, decks, replies, and briefings without re-reading.
+One ingestion. Many outputs. How the same source material feeds articles, reports, decks, short responses, and briefings without re-reading.
 
 ## The principle
 
@@ -12,8 +12,8 @@ This is the opposite of how most people work with LLMs, where the same PDF gets 
 
 The system produces work for several surfaces from the same knowledge base:
 
-- **Threads.** Long-form public posts in series. Composed register, careful citations, source-faithful.
-- **Replies.** Short-form reactions. Phone-casual register, sharper kickers.
+- **Articles and article series.** Long-form publishing in sequence. Composed register, careful citations, source-faithful.
+- **Short responses.** Compressed reactions for social or chat surfaces. Casual register, sharper kickers.
 - **Reports.** Prose documents for personal or shared use. Calibrated language, full attribution.
 - **Decks.** Slide presentations. Spare, one idea per slide.
 - **Briefings.** Stand-ups or status pages. Compressed, action-oriented.
@@ -32,7 +32,7 @@ A paper on a topic gets ingested. The wiki entry holds:
 - Caveats
 - Quotes worth keeping
 
-From that entry, a thread can be drafted by pulling key claims and quotes. A report can be drafted by pulling method and caveats. A deck can be drafted by pulling the one-line takeaway plus one supporting figure per slide. None of these need the original PDF in context. The wiki entry is sufficient.
+From that entry, an article can be drafted by pulling key claims and quotes. A report can be drafted by pulling method and caveats. A deck can be drafted by pulling the one-line takeaway plus one supporting figure per slide. None of these need the original PDF in context. The wiki entry is sufficient.
 
 ## Why this matters at scale
 
@@ -40,9 +40,9 @@ Twenty papers on a topic, each with a wiki entry, produce:
 
 - A canonical fact pack synthesizing the convergent findings
 - A long-form report covering the topic comprehensively
-- A thread series introducing the topic to a general audience
+- An article series introducing the topic to a general audience
 - A deck for any presentation on the topic
-- Reply material whenever the topic surfaces in conversation
+- Short-response material whenever the topic surfaces in conversation
 
 All from the same ingestions. No re-reading. The wiki turns reading into infrastructure that pays out over months.
 
@@ -50,10 +50,10 @@ All from the same ingestions. No re-reading. The wiki turns reading into infrast
 
 Each surface has its own transform from wiki to draft:
 
-- **Thread.** Pick a hook claim, build the argument across posts, close with a sharp landing. One claim per post, one stat maximum.
+- **Article series.** Pick a hook claim, build the argument across beats, close with a sharp landing. One claim per beat, one stat maximum.
 - **Report.** Structure by argument, not by source. The wiki entries support the report; they do not dictate its shape.
 - **Deck.** Each slide is one beat of the argument. The wiki provides the evidence; the deck provides the rhythm.
-- **Reply.** The wiki provides the receipt; the reply provides the voice.
+- **Short response.** The wiki provides the receipt; the response provides the voice.
 
 The transforms are documented in their own surface playbooks.
 

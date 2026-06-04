@@ -15,8 +15,8 @@ This example index uses the sanitized samples in `examples/`. A real index would
 
 ## Active projects
 
-- [Thread series in flight](examples/project_thread_series.md) — Source-faithful; defense at close only
+- [Article series in flight](examples/project_article_series.md) — Source-faithful; defense at close only
 
 ## Operational references
 
-- [Posting playbook](examples/reference_posting_playbook.md) — Platform-specific gotchas
+- [Publishing playbook](examples/reference_publishing_playbook.md) — Surface-specific gotchas
