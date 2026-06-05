@@ -2,7 +2,7 @@
 
 A personal LLM operations stack for research, writing, and decision support.
 
-The assistant directs research and drafting. The human curates judgment, sources, and ship decisions. This repo is the system: how memory persists across sessions, how a knowledge backend gets built one paper at a time, how voice rules are encoded, how facts get verified before they ship, and how a single ingestion produces articles, reports, decks, short responses, and briefings from the same source material.
+The assistant directs research and drafting. The human curates judgment, sources, and ship decisions. This repo is the system: how memory persists across sessions, how a knowledge backend gets built one paper at a time, how voice rules are encoded, how facts get verified before they ship, and how a single ingestion produces articles, reports, decks, and briefings from the same source material.
 
 Built collaboratively with Claude over many months as a working PM's daily tool. Not a script. Not a single agent. An ops layer.
 
@@ -27,7 +27,7 @@ This repo is the framework, not the content. The content (papers, drafts, person
 
 ## What this repo is not
 
-Not a single-purpose tool. Not magic. Social publishing is one of several output surfaces and is intentionally not the headline.
+Not a single-purpose tool. Not magic. The framework is the artifact; the private content it produces stays local.
 
 ## License
 

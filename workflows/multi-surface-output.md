@@ -1,6 +1,6 @@
 # workflows/multi-surface-output.md
 
-One ingestion. Many outputs. How the same source material feeds articles, reports, decks, short responses, and briefings without re-reading.
+One ingestion. Many outputs. How the same source material feeds articles, reports, decks, and briefings without re-reading.
 
 ## The principle
 
@@ -12,13 +12,12 @@ This is the opposite of how most people work with LLMs, where the same PDF gets 
 
 The system produces work for several surfaces from the same knowledge base:
 
-- **Articles and article series.** Long-form publishing in sequence. Composed register, careful citations, source-faithful.
-- **Short responses.** Compressed reactions for social or chat surfaces. Casual register, sharper kickers.
+- **Articles and article series.** Long-form publishing in sequence. Composed shape, careful citations, source-faithful.
 - **Reports.** Prose documents for personal or shared use. Calibrated language, full attribution.
 - **Decks.** Slide presentations. Spare, one idea per slide.
 - **Briefings.** Stand-ups or status pages. Compressed, action-oriented.
 
-Each surface has its own playbook and its own register. The underlying material is the same.
+Each surface has its own playbook. The underlying material is the same.
 
 ## How a single source flows
 
@@ -32,7 +31,7 @@ A paper on a topic gets ingested. The wiki entry holds:
 - Caveats
 - Quotes worth keeping
 
-From that entry, an article can be drafted by pulling key claims and quotes. A report can be drafted by pulling method and caveats. A deck can be drafted by pulling the one-line takeaway plus one supporting figure per slide. None of these need the original PDF in context. The wiki entry is sufficient.
+From that entry, an article can be drafted by pulling key claims and quotes. A report can be drafted by pulling method and caveats. A deck can be drafted by pulling the one-line takeaway plus one supporting figure per slide. A briefing can be drafted by pulling only the action-relevant findings. None of these need the original PDF in context. The wiki entry is sufficient.
 
 ## Why this matters at scale
 
@@ -42,7 +41,7 @@ Twenty papers on a topic, each with a wiki entry, produce:
 - A long-form report covering the topic comprehensively
 - An article series introducing the topic to a general audience
 - A deck for any presentation on the topic
-- Short-response material whenever the topic surfaces in conversation
+- A briefing whenever the topic surfaces in an active project
 
 All from the same ingestions. No re-reading. The wiki turns reading into infrastructure that pays out over months.
 
@@ -50,10 +49,10 @@ All from the same ingestions. No re-reading. The wiki turns reading into infrast
 
 Each surface has its own transform from wiki to draft:
 
-- **Article series.** Pick a hook claim, build the argument across beats, close with a sharp landing. One claim per beat, one stat maximum.
+- **Article series.** Pick a hook claim, build the argument across beats, close with a fair landing. One claim per beat, one stat maximum.
 - **Report.** Structure by argument, not by source. The wiki entries support the report; they do not dictate its shape.
 - **Deck.** Each slide is one beat of the argument. The wiki provides the evidence; the deck provides the rhythm.
-- **Short response.** The wiki provides the receipt; the response provides the voice.
+- **Briefing.** Lead with the action-relevant finding. Cite the wiki entry. Move on.
 
 The transforms are documented in their own surface playbooks.
 
@@ -67,4 +66,4 @@ This separation is what makes the system extensible. A new output surface is a n
 
 - `wiki/schema.md` for what the wiki holds
 - `research.md` for how sources get into the wiki
-- `voice.md` for how registers differ across surfaces
+- `voice.md` for how shape differs across surfaces

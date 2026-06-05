@@ -31,7 +31,7 @@ How to apply: rewrite into two sentences, or use a colon, or use a comma. Never 
 - "the name is doing work"
 - "the real story is..."
 - "is doing the heavy lifting"
-- "this, not that" antithesis stingers
+- "this, not that" antithesis constructions
 - "collapses" used as a verb of analysis ("the framing collapses")
 - "this is the tell"
 
@@ -43,9 +43,9 @@ How to apply: if a draft contains any of these, the sentence is rewritten. No ex
 
 ## Structure bans
 
-**No bullet points in short-form output.**
-Why: bullet points are how chatbots think, not how writers write. Prose forces the model to find a real argument.
-How to apply: convert any bullet list in a short post into a sequence of sentences.
+**Prose by default; bullets only when the structure actually is a list.**
+Why: bullet points are how chatbots think, not how writers write. Prose forces the model to find a real argument. Lists are appropriate for genuine enumerations (checklists, options, distinct cases), not for paragraphs in disguise.
+How to apply: if a bulleted draft reads as a paragraph chopped into chunks, rewrite as prose.
 
 **No "this, not that" parallelism.**
 Why: it is a tic the model loves and it always sounds smug.
@@ -70,7 +70,7 @@ These are not bans. They are what good output should hit.
 
 ## The voice rules check
 
-Before any short-form output ships:
+Before any output ships:
 
 1. Scan for banned punctuation. Rewrite if present.
 2. Scan for banned phrases. Rewrite if present.

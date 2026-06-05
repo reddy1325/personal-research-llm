@@ -6,7 +6,7 @@ How voice consistency is maintained across surfaces and across months.
 
 **Persona** (`agent/persona.template.md`) — who I write as. Background, lanes, hard-no topics.
 
-**Style bible** — synthesized voice rules. Hook types, structures, vocabulary that sounds native.
+**Style bible** — synthesized voice rules. Hook types, structures, vocabulary that sounds native to serious writing.
 
 **Voice rules check** (`agent/voice-rules.md`) — the kill list. Adversarial QA for AI tells.
 
@@ -15,24 +15,24 @@ All three load before any drafting begins. The order matters: persona shapes wha
 ## The check, in order
 
 1. Persona match: is the draft something I would actually say given my topic lanes and hard-nos?
-2. Style match: does the structure fit a proven shape for this surface?
+2. Structure match: does the shape fit the output (article, report, deck, briefing)?
 3. Voice rules: scan for banned punctuation, banned phrases, banned structures.
 4. Read-aloud: does it sound like a person or a press release?
-5. Spice level: appropriate for this audience and this surface?
+5. Calibration: are hedges and certainties placed where they belong?
 6. Approval round: present to the human before any irreversible ship.
 
 A draft that fails the check is rewritten, not patched. Patching produces Frankenstein voice.
 
-## Register switching
+## Output shapes
 
-The same voice has different registers per surface:
+The same voice has different shapes per output:
 
-- **Long-form articles or article series.** Composed. Full citations where they belong. One stat per beat. Each beat stands alone.
-- **Short responses.** Casual. Sharper kickers allowed. Compressed to the essential point.
-- **Reports.** Prose, not bullets. Calibrated language. Source-faithful by default.
+- **Long-form articles and article series.** Composed. Full citations where they belong. One stat per beat. Each beat stands alone.
+- **Reports.** Prose, not bullets. Calibrated language. Source-faithful by default. Structure by argument, not by source.
 - **Decks.** Spare. One idea per slide. The voice still shows up, just compressed.
+- **Briefings.** Action-oriented. Compressed. What changed, what is next.
 
-Register switching is in the voice rules check. A short response written in long-form register reads stiff; a long-form article written in short-response register reads sloppy.
+The voice rules check runs on every shape. A report written in deck cadence reads thin; a deck written in report cadence reads cluttered.
 
 ## Source-faithful default
 

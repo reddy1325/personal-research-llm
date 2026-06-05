@@ -28,7 +28,7 @@ Example: "Long-form article series in progress on a single topic. Order: part 1 
 
 Pointers to external systems. Where to look for things that live outside this repo.
 
-Example: "Publishing playbook for the social surface I use most: response-restriction detection, virtualized timeline workaround, search filter syntax. Lives at `reference_publishing_playbook.md` in private memory."
+Example: "Publishing playbook for long-form articles: outline conventions, citation style, image-handling rules, pre-publication checklist. Lives at `reference_publishing_playbook.md` in private memory."
 
 ## File format
 
@@ -57,7 +57,7 @@ Cross-link related memories with [[their-name-slug]].
 - [Present drafts before shipping](feedback_present_drafts.md) — Show full draft for approval
 
 ## Voice bans
-- [No em dashes](feedback_no_em_dashes.md) — All AI tells; never in short-form output
+- [No em dashes](feedback_no_em_dashes.md) — Top AI tell; never in any output
 
 ## User profile
 - [Product manager focus](user_role.md) — AI-native PM, frame explanations as such

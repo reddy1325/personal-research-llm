@@ -20,15 +20,15 @@ This is the difference between a chatbot and a system. A chatbot forgets. A syst
 
 These are sanitized versions of real recoveries.
 
-### Duplicate response to the same parent item
+### Duplicate wiki entry for the same source
 
-**Incident.** Two responses were drafted and shipped to the same parent item in the same session.
+**Incident.** A paper was ingested twice into the wiki under slightly different filenames, splitting the cross-link graph in two and causing downstream drafts to miss half the relevant claims.
 
-**Diagnosis.** The assistant treated each batch as independent and did not check whether a prior response existed.
+**Diagnosis.** The ingestion playbook did not include a duplicate check. The second ingestion treated the paper as new because the filename differed.
 
-**Encoded fix.** A standing memory rule: never respond more than once to the same item in the same conversation arc. Before drafting a response, check whether a prior response exists.
+**Encoded fix.** Before any new wiki entry is written, grep for the author and year. If a match exists, the new ingestion is appended to or merged with the existing entry rather than creating a duplicate.
 
-**Status.** Not recurred since the rule was added.
+**Status.** Encoded in the research workflow. Duplicate entries have not recurred.
 
 ### Composer-clear treated as "shipped"
 

@@ -18,7 +18,7 @@ Why: the cost of a wrong ship is high. The cost of an approval round is low. The
 
 ### Calls requiring taste
 
-How sharp should this response be? Is this article too academic for the audience? Does this draft read as warm or cold? Taste cannot be specced in advance. The assistant flags the call and the human makes it.
+Is this draft too academic for the intended audience? Does the opening land? Is the closing argument fair to the source? Taste cannot be specced in advance. The assistant flags the call and the human makes it.
 
 ### Calls requiring political or cultural judgment
 
