@@ -8,11 +8,11 @@ If a rule is not in a spec file, it does not exist. The assistant does not infer
 
 Specs in this system:
 
-- `agent/instructions.md` — how the assistant operates
-- `agent/persona.template.md` — who the assistant writes as
-- `agent/voice-rules.md` — the adversarial QA layer
-- `workflows/*.md` — how each kind of work gets done
-- `memory/*.md` — standing rules, project state, references
+- `agent/instructions.md`, how the assistant operates
+- `agent/persona.template.md`, who the assistant writes as
+- `agent/voice-rules.md`, the adversarial QA layer
+- `workflows/*.md`, how each kind of work gets done
+- `memory/*.md`, standing rules, project state, references
 
 Every spec is plain English, in Markdown, in version control. A future you can read it. A collaborator can review it. The assistant can follow it.
 
@@ -53,6 +53,6 @@ This is the difference between a chatbot that does what you say and a system tha
 
 ## See also
 
-- `agent/instructions.md` — the top-level spec
-- `memory/schema.md` — how rules are formatted
-- `failure-recovery.md` — examples of incidents that produced rules
+- `agent/instructions.md`, the top-level spec
+- `memory/schema.md`, how rules are formatted
+- `failure-recovery.md`, examples of incidents that produced rules

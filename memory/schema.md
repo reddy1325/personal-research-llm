@@ -53,14 +53,14 @@ Cross-link related memories with [[their-name-slug]].
 `MEMORY.md` is the index file. It loads into every conversation automatically. It contains one-line pointers to every memory file, grouped by topic:
 
 ```markdown
-## Working style — hard rules
-- [Present drafts before shipping](feedback_present_drafts.md) — Show full draft for approval
+## Working style, hard rules
+- [Present drafts before shipping](feedback_present_drafts.md), Show full draft for approval
 
 ## Voice bans
-- [No em dashes](feedback_no_em_dashes.md) — Top AI tell; never in any output
+- [No em dashes](feedback_no_em_dashes.md), Top AI tell; never in any output
 
 ## User profile
-- [Product manager focus](user_role.md) — AI-native PM, frame explanations as such
+- [Product manager focus](user_role.md), AI-native PM, frame explanations as such
 ```
 
 The index is small enough to always fit in context. The bodies load on demand. This is how a multi-megabyte memory layer fits inside a context window.

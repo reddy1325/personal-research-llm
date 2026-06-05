@@ -74,6 +74,6 @@ This is what makes the system trustworthy enough to delegate real work to.
 
 ## See also
 
-- `spec-driven.md` — why behaviors are written down first
-- `memory/schema.md` — how rules are stored
-- `verification.md` — the rules that protect the fact layer
+- `spec-driven.md`, why behaviors are written down first
+- `memory/schema.md`, how rules are stored
+- `verification.md`, the rules that protect the fact layer

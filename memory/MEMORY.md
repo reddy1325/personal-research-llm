@@ -6,17 +6,17 @@ This example index uses the sanitized samples in `examples/`. A real index would
 
 ## User profile
 
-- [Product manager focus](examples/user_role.md) — AI-native PM, frame explanations as such
+- [Product manager focus](examples/user_role.md), AI-native PM, frame explanations as such
 
-## Working style — hard rules
+## Working style, hard rules
 
-- [Present drafts before shipping](examples/feedback_present_drafts.md) — Save to durable file, get approval
-- [Verify load-bearing facts before drafting](examples/feedback_verify_before_draft.md) — Web-search BEFORE writing
+- [Present drafts before shipping](examples/feedback_present_drafts.md), Save to durable file, get approval
+- [Verify load-bearing facts before drafting](examples/feedback_verify_before_draft.md), Web-search BEFORE writing
 
 ## Active projects
 
-- [Article series in flight](examples/project_article_series.md) — Source-faithful; defense at close only
+- [Article series in flight](examples/project_article_series.md), Source-faithful; defense at close only
 
 ## Operational references
 
-- [Publishing playbook](examples/reference_publishing_playbook.md) — Surface-specific gotchas
+- [Publishing playbook](examples/reference_publishing_playbook.md), Surface-specific gotchas

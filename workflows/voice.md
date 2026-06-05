@@ -4,11 +4,11 @@ How voice consistency is maintained across surfaces and across months.
 
 ## The three layers
 
-**Persona** (`agent/persona.template.md`) — who I write as. Background, lanes, hard-no topics.
+**Persona** (`agent/persona.template.md`), who I write as. Background, lanes, hard-no topics.
 
-**Style bible** — synthesized voice rules. Hook types, structures, vocabulary that sounds native to serious writing.
+**Style bible**, synthesized voice rules. Hook types, structures, vocabulary that sounds native to serious writing.
 
-**Voice rules check** (`agent/voice-rules.md`) — the kill list. Adversarial QA for AI tells.
+**Voice rules check** (`agent/voice-rules.md`), the kill list. Adversarial QA for AI tells.
 
 All three load before any drafting begins. The order matters: persona shapes what gets said, style bible shapes how it gets said, the voice rules check filters what slips through.
 

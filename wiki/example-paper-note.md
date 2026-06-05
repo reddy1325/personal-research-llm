@@ -9,7 +9,7 @@ metadata:
   source-tier: primary
 ---
 
-# Example Et Al. 2024 — A Worked Example of the Wiki Entry Format
+# Example Et Al. 2024, A Worked Example of the Wiki Entry Format
 
 ## Citation
 

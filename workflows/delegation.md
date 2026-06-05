@@ -65,6 +65,6 @@ The discipline is mutual. The assistant asks more than it answers when the call 
 
 ## See also
 
-- `agent/instructions.md` — the operating spec that names the routing rules
-- `verification.md` — the two-way fact-check layer
-- `spec-driven.md` — why this is encoded rather than improvised
+- `agent/instructions.md`, the operating spec that names the routing rules
+- `verification.md`, the two-way fact-check layer
+- `spec-driven.md`, why this is encoded rather than improvised

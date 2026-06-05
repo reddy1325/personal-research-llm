@@ -64,10 +64,10 @@ Each topic area has its own `INDEX_<topic>.md` collecting one-line pointers to e
 # INDEX_<topic>.md
 
 ## Primary sources
-- [Author 2024 — short title](author_2024_short_title.md) — One-line takeaway
+- [Author 2024, short title](author_2024_short_title.md), One-line takeaway
 
 ## Synthesis
-- [Topic overview](topic_overview.md) — How the pieces fit together
+- [Topic overview](topic_overview.md), How the pieces fit together
 ```
 
 ## Cross-linking discipline
