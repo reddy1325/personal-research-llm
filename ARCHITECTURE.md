@@ -2,20 +2,21 @@
 
 Four layers, each doing one job. The layers compose. None of them depend on a specific model or vendor.
 
-```
-+-------------------------------------------------------------+
-|  Skills           docx | pptx | xlsx | deep-research | ...  |
-|  (capabilities)   loaded on demand, composable              |
-+-------------------------------------------------------------+
-|  Playbooks        research | verification | voice | ...     |
-|  (workflows)      how work gets done, written down          |
-+-------------------------------------------------------------+
-|  Wiki             every paper, book, source as a note       |
-|  (knowledge)      frontmatter + cross-links + index         |
-+-------------------------------------------------------------+
-|  Memory           who I am, what I am working on, what to   |
-|  (state)          avoid. Loads every session.               |
-+-------------------------------------------------------------+
+## The four layers
+
+```mermaid
+flowchart TB
+    classDef cap fill:#FFF3E0,stroke:#E65100,color:#BF360C,stroke-width:2px
+    classDef play fill:#E8F5E9,stroke:#2E7D32,color:#1B5E20,stroke-width:2px
+    classDef know fill:#E3F2FD,stroke:#1565C0,color:#0D47A1,stroke-width:2px
+    classDef mem fill:#F3E5F5,stroke:#6A1B9A,color:#4A148C,stroke-width:2px
+
+    S["Skills (capabilities)<br/>docx | pptx | xlsx | deep-research | ...<br/><i>loaded on demand, composable</i>"]:::cap
+    P["Playbooks (workflows)<br/>research | verification | voice | delegation | ...<br/><i>how work gets done, written down</i>"]:::play
+    W["Wiki (knowledge backend)<br/>every paper, book, source as a structured note<br/><i>frontmatter + cross-links + index</i>"]:::know
+    M["Memory (state)<br/>who I am, what I am working on, what to avoid<br/><i>loaded into context every session</i>"]:::mem
+
+    S --> P --> W --> M
 ```
 
 ## Layer 1: Memory
@@ -43,6 +44,71 @@ When a workflow fails, the fix is a new playbook entry or a new memory rule. Fai
 ## Layer 4: Skills
 
 Specialist capabilities loaded on demand. Document creation (docx, pptx, xlsx, pdf). Deep research (multi-source fan-out with adversarial verification). Skill authoring (skills that create other skills). Same knowledge base, different output surfaces.
+
+## End-to-end process flow
+
+How a single PDF becomes durable knowledge and ships as output.
+
+```mermaid
+flowchart LR
+    classDef src fill:#E1F5FE,stroke:#0277BD,color:#01579B
+    classDef ing fill:#FFF3E0,stroke:#EF6C00,color:#E65100
+    classDef sto fill:#F3E5F5,stroke:#7B1FA2,color:#4A148C
+    classDef draft fill:#E8F5E9,stroke:#388E3C,color:#1B5E20
+    classDef check fill:#FFEBEE,stroke:#C62828,color:#B71C1C
+    classDef human fill:#FFFDE7,stroke:#F9A825,color:#F57F17
+    classDef out fill:#EDE7F6,stroke:#4527A0,color:#311B92
+
+    SRC["PDF / Book chapter<br/>Web source / Primary doc"]:::src
+
+    SRC --> ID["1. Identity check<br/>title, authors, year, edition"]:::ing
+    ID --> READ["2. Three-pass read<br/>skeleton → targeted → detail"]:::ing
+    READ --> NOTE["3. Three-layer note<br/>takeaway / claims / full"]:::ing
+    NOTE --> WIKI["Wiki entry<br/>frontmatter + cross-links"]:::sto
+
+    WIKI --> IDX["Topic index updated"]:::sto
+    WIKI --> MEM["Memory updated<br/>if fact-pack changes"]:::sto
+
+    WIKI --> PULL["Drafting pulls layers<br/>(takeaway / claims / full)"]:::draft
+    MEM --> PULL
+    PERSONA["Persona spec"]:::sto --> PULL
+    STYLE["Style bible"]:::sto --> PULL
+
+    PULL --> DRAFT["Draft produced"]:::draft
+    DRAFT --> VOICE["Voice rules check<br/>punctuation / phrases / structure"]:::check
+    VOICE --> VERIFY["Verification gate<br/>number / attribution / scope / interpretation"]:::check
+    VERIFY --> APPROVE{"Human approval"}:::human
+
+    APPROVE -- approved --> SHIP["Articles · Reports<br/>Decks · Briefings"]:::out
+    APPROVE -- rejected --> FIX["Diagnosis<br/>What rule was missing?"]:::human
+    FIX --> RULE["New spec entry<br/>memory or playbook"]:::sto
+    RULE -.-> MEM
+
+    SHIP --> LOG["Result logged<br/>activity + outcome"]:::sto
+    LOG -.-> MEM
+```
+
+## Failure-recovery loop
+
+Every standing rule in the system traces to a specific incident. Failures get encoded so they do not recur.
+
+```mermaid
+flowchart LR
+    classDef inc fill:#FFEBEE,stroke:#C62828,color:#B71C1C
+    classDef dia fill:#FFF3E0,stroke:#EF6C00,color:#E65100
+    classDef enc fill:#E8F5E9,stroke:#388E3C,color:#1B5E20
+    classDef rule fill:#F3E5F5,stroke:#7B1FA2,color:#4A148C
+
+    A["Incident<br/>something shipped wrong<br/>or nearly did"]:::inc
+    B["Diagnosis<br/>what rule was missing?<br/>what was relied on?"]:::dia
+    C["Encoded fix<br/>spec entry with<br/>Why + How to apply"]:::enc
+    D["Standing rule<br/>loads every session<br/>via MEMORY.md index"]:::rule
+
+    A --> B --> C --> D
+    D -.-> A
+```
+
+The dashed return arrow says: the rule is in place before the same incident can happen again. The loop closes.
 
 ## Cross-cutting choices
 
